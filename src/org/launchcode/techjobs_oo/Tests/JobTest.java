@@ -26,8 +26,8 @@ public class JobTest {
 
     @Test
     public void testSettingJobId(){
-        assertEquals(1, jobTest1.getId());
-        assertEquals(2, jobTest2.getId());
+//        assertEquals(1, jobTest1.getId());
+//        assertEquals(2, jobTest2.getId());
         assertTrue((jobTest2.getId())- (jobTest1.getId())== 1);
         assertEquals(1, jobTest2.getId()- jobTest1.getId());
     }
