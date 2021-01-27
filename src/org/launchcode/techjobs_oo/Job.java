@@ -78,9 +78,7 @@ public class Job {
         return positionType;
     }
 
-    public void setPositionType(PositionType positionType) {
-        this.positionType = positionType;
-    }
+    public void setPositionType(PositionType positionType) { this.positionType = positionType; }
 
     public CoreCompetency getCoreCompetency() {
         return coreCompetency;
@@ -96,11 +94,40 @@ public class Job {
 
     @Override
     public String toString() {
-        return   "\n"+ "ID= " + id + "\n"+
-                 "Name= " + name + "\n"+
-                 "Employer: " + employer + "\n"+
+
+        return   "\n"+ "ID: " + id + "\n"+
+                 "Name: " + name + "\n"+
+                 "Employer: " + this.employer + "\n"+
                  "Location: " + location + "\n"+
                  "Position Type: " + positionType + "\n"+
                  "Core Competency: " + coreCompetency + "\n";
     }
+
 }
+
+//    @Override
+//    public String toString() {
+//
+//        return "\n" +"Job{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", employer=" + employer +
+//                ", location=" + location +
+//                ", positionType=" + positionType +
+//                ", coreCompetency=" + coreCompetency +
+//                '}' + "\n";
+//    }
+
+
+//        String str = "Data not available";
+//        if(name.equals("")){
+//            this.setName("Data not available");
+//        } if(employer.equals("")){
+//            setEmployer(employer = new Employer("Data not available"));
+//        }  if (location.equals(" ")){
+//            location.setValue("Data not available");
+//        }  if (this.getPositionType().equals(" ")){
+//            this.setPositionType("Data not available");
+//        }  if (coreCompetency.equals(" ")){
+//            String coreCompetency = "Data not available";
+//        }

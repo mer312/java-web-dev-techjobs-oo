@@ -2,7 +2,7 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
-public class JobField {
+public abstract class JobField {
 
     private int id;
     private static int nextId = 1;
@@ -15,7 +15,11 @@ public class JobField {
 
     public JobField(String value) {
         this();
-        this.value = value;
+        if(value.equals("")){
+            this.value= "Data not available";
+        }else {
+            this.value = value;
+        }
     }
 
     @Override
